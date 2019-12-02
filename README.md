@@ -1,2 +1,2 @@
-# node-plain-event-bus
+# plain-event-bus
 Event bus
