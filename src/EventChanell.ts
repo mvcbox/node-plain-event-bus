@@ -9,7 +9,7 @@ export class EventChanell extends EventEmitter {
         super();
         this._event = event;
         this._eventBus = eventBus;
-        this._callback = (...args: []) => {
+        this._callback = (...args: any[]) => {
             this.emit('event', ...args);
         };
         prepend ? this._eventBus.prependListener(this._event, this._callback) : this._eventBus.on(this._event, this._callback);
